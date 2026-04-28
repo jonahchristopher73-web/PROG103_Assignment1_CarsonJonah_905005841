@@ -29,7 +29,4 @@ This project demonstrates structured programming concepts such as:
 This project supports **SDG 4: Quality Education**.  
 By tracking attendance, schools can monitor student participation, identify absenteeism trends, and ensure inclusive and equitable education opportunities.
 
-## How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YourUsername/PROG103_Assignment1_YourName_YourID.git
+
