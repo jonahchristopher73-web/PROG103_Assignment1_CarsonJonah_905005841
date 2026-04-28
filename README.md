@@ -1,63 +1,35 @@
-# PROG103_Assignment1_CarsonJonah_905005841
+
 # Attendance Tracking System (ATS)
-# PROG103 Assignment 1
-# Student Result Management Terminal System (SRMTS)
-# Author: [Carson Jonah]
-# Date:  28 April 2026
-# Constants
-MAX_STUDENTS = 50
-# Global list to store attendance records
-attendance_records = []
-# Function to add attendance
-def add_attendance():
-    name = input("Enter student name: ")
-    status = input("Enter attendance status (Present/Absent): ").capitalize()
-    record = {"name": name, "status": status}
-    attendance_records.append(record)
-    print(f"Attendance recorded for {name} as {status}.\n")
 
+## Project Overview
+The Attendance Tracking System (ATS) is a terminal-based Python application developed for **PROG103: Principles of Structured Programming**.  
+It allows teachers or administrators to record, display, and summarize student attendance in a simple and efficient way.
 
-# Function to display attendance
-def display_attendance():
-    print("\n--- Attendance Records ---")
-    for i, record in enumerate(attendance_records, start=1):
-        print(f"{i}. {record['name']} - {record['status']}")
-    print("--------------------------\n")
+This project demonstrates structured programming concepts such as:
+- Variables and constants
+- Data types
+- Decision structures (`if-elif-else`)
+- Iteration (loops)
+- Functions (modularity)
 
-# Function to calculate summary
-def attendance_summary():
-    present_count = sum(1 for r in attendance_records if r["status"] == "Present")
-    absent_count = sum(1 for r in attendance_records if r["status"] == "Absent")
-    print("\n--- Attendance Summary ---")
-    print(f"Total Students: {len(attendance_records)}")
-    print(f"Present: {present_count}")
-    print(f"Absent: {absent_count}")
-    print("--------------------------\n")
+## Objectives
+- Apply structured programming principles correctly.
+- Use variables, data types, decisions, loops, and functions effectively.
+- Develop a complete terminal-based Python application.
+- Solve a real-world problem logically.
+- Submit work using GitHub and terminal commands.
 
-# Main program loop
-def main():
-    while True:
-        print("Attendance Tracking System")
-        print("1. Add Attendance")
-        print("2. Display Attendance")
-        print("3. Attendance Summary")
-        print("4. Exit")
+## Features
+- Add Attendance: Record student name and status (Present/Absent).
+- Display Attendance: View all attendance records in a formatted list.
+- Attendance Summary: Calculate totals of present and absent students.
+- Exit Option: Cleanly exit the system.
 
-        choice = input("Enter your choice: ")
+## SDG Integration
+This project supports **SDG 4: Quality Education**.  
+By tracking attendance, schools can monitor student participation, identify absenteeism trends, and ensure inclusive and equitable education opportunities.
 
-        if choice == "1":
-            add_attendance()
-        elif choice == "2":
-            display_attendance()
-        elif choice == "3":
-            attendance_summary()
-        elif choice == "4":
-            print("Exiting system. Goodbye!")
-            break
-        else:
-            print("Invalid choice. Try again.\n")
-
-
-# Run program
-if __name__ == "__main__":
-    main()
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/PROG103_Assignment1_YourName_YourID.git
